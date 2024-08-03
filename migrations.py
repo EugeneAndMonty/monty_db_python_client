@@ -3,7 +3,7 @@ from models import DocsDb, KvsDb, SqlDb, FirstCollection
 DocsDb.create_store()
 KvsDb.create_store()
 SqlDb.create_store()
-FirstCollection.create_collection()
+# FirstCollection.create_collection()
 
 # DocsDb.drop_store()
 # KvsDb.drop_store()

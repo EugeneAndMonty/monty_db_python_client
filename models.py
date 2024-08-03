@@ -5,8 +5,8 @@ from store_classes.collection import Collection
 
 #connection
 class Connection(Engine):
-    username = "MONTY"
-    password = "CAT"
+    username = "EUGENE"
+    password = "1234"
     host = "127.0.0.1"
     port = 21210
 
