@@ -1,7 +1,7 @@
 from models import KvsDb, FirstCollection
 from store_classes.schema import Schema
 # print(KvsDb.insert_key("key1", 10, True))
-# print(KvsDb.insert_key_value_pair("key2", "value2"))
+print(KvsDb.insert_key_value_pair("key2", "value2"))
 # print(KvsDb.get_value("key1"))
 # print(KvsDb.get_keys())
 # print(KvsDb.delete_key("key1"))

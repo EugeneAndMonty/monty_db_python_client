@@ -10,6 +10,7 @@ def connect_engine_(cls: type, engine: Engine) -> None:
 
 def _convert_to_binary(cls: type):
     return json.dumps({
+        "request": cls.request,
         "username": cls.username, 
         "password": cls.password, 
         "command": cls.command,
@@ -23,10 +24,12 @@ def run_query(cls: type):
     return asyncio.run(send_data(cls.host, cls.port, query))
 
 def create_store_(cls: type) -> None:
-    cls.command = "create store"
+    cls.command = "create_store"
+    cls.request = "utils"
     return run_query(cls)
 
 def drop_store_(cls: type) -> None:
+    cls.reuest = "utils"
     return print('DROP', cls.store_name, cls.store_type)
 
 def show_store_properties_(cls: type) -> None:
