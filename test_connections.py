@@ -1,5 +1,5 @@
 from models import KvsDb, FirstCollection
-from store_classes.schema import Schema
+from store_classes.doc_based.schema import Schema
 # print(KvsDb.insert_key("key1", 10, True))
 print(KvsDb.insert_key_value_pair("key2", "value2"))
 # print(KvsDb.get_value("key1"))
