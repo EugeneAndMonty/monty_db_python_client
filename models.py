@@ -1,7 +1,7 @@
 import json
 from store import Store
 from engine import Engine
-from store_classes.collection import Collection
+from store_classes.doc_based.collection import Collection
 
 #connection
 class Connection(Engine):
@@ -23,7 +23,7 @@ class SqlDb(Store.sql):
 #db connections
 DocsDb.connect_engine(Connection)
 KvsDb.connect_engine(Connection)
-SqlDb.connect_engine(Connection)
+# SqlDb.connect_engine(Connection)
 
 #collections
 class FirstCollection(Collection):

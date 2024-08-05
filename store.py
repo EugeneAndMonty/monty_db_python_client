@@ -1,6 +1,6 @@
 from store_classes.sql import generic_tab
-from store_classes.kv import generic_kv
-from store_classes.doc import generic_doc
+from store_classes.kv_based.kv import generic_kv
+from store_classes.doc_based.doc import generic_doc
 
 class Store:
     store_name: str = None
