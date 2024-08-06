@@ -1,7 +1,13 @@
 from models import KvsDb, FirstCollection
 from store_classes.doc_based.schema import Schema
 # print(KvsDb.insert_key("key1", 10, True))
-print(KvsDb.insert_key_value_pair("key2", "value2"))
+# print(KvsDb.insert_key_value_pair("key2", "value2"))
+KvsDb.insert_key_value_pair("new key", "new value", expire_sec=30)
+KvsDb.insert_key_value_pair("new key717", "new value", expire_sec=10)
+
+# result = KvsDb.get_value("key2")
+result2 = KvsDb.get_value("new key")
+print(result2)
 # print(KvsDb.get_value("key1"))
 # print(KvsDb.get_keys())
 # print(KvsDb.delete_key("key1"))
